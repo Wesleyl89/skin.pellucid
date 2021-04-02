@@ -2,25 +2,45 @@
 <window>
     <visible>!window.isactive(videoosd) + !window.isactive(osdvideosettings) + !window.isactive(osdaudiosettings) + !Window.IsActive(DialogSubtitles.xml) + !Window.IsVisible(fullscreeninfo) + [VideoPlayer.IsFullscreen + !Window.IsVisible(visualisation)] + [!String.IsEmpty(Player.SeekNumeric) | Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
     <controls>
-		<control type="image">
-			<visible>!String.IsEmpty(player.Art(clearart))</visible>
-            <posx>col-15-begin</posx>
+        <control type="image">
+			<visible>!String.IsEmpty(player.Art(clearlogo))</visible>
+            <posx>col-17-begin</posx>
             <posy>row-18-begin</posy>
-            <width>12-col</width>
-            <height>6-col</height>
-            <texture>$INFO[player.Art(clearart)]</texture>
-            <aspectratio align="right">scale</aspectratio>
-            <colordiffuse>BBffffff</colordiffuse>
-        </control>
-		<control type="image">
-			<visible>!String.IsEmpty(player.Art(clearlogo)) + String.IsEmpty(player.Art(clearart))</visible>
-            <posx>col-14-begin</posx>
-            <posy>row-18-begin</posy>
-            <width>12-col</width>
-            <height>6-col</height>
+            <width>8-col</width>
+            <height>4-col</height>
             <texture>$INFO[player.Art(clearlogo)]</texture>
             <aspectratio align="right">keep</aspectratio>
-            <colordiffuse>BBffffff</colordiffuse>
+            <!-- <colordiffuse>BBffffff</colordiffuse> -->
+        </control>
+		<control type="image">
+			<visible>!String.IsEmpty(player.Art(clearart)) + String.IsEmpty(player.Art(clearlogo))</visible>
+            <posx>col-17-begin</posx>
+            <posy>row-17-begin</posy>
+            <width>8-col</width>
+            <height>4-col</height>
+            <texture>$INFO[player.Art(clearart)]</texture>
+            <aspectratio align="right">keep</aspectratio>
+            <!-- <colordiffuse>BBffffff</colordiffuse> -->
+        </control>
+        <control type="image">
+			<visible>VideoPlayer.Content(episodes) + !String.IsEmpty(player.Art(tvshow.clearart))</visible>
+            <posx>col-17-begin</posx>
+            <posy>row-17-begin</posy>
+            <width>8-col</width>
+            <height>4-col</height>
+            <texture>$INFO[player.Art(tvshow.clearart)]</texture>
+            <aspectratio align="right">keep</aspectratio>
+            <!-- <colordiffuse>BBffffff</colordiffuse> -->
+        </control>
+        <control type="image">
+			<visible>VideoPlayer.Content(episodes) + !String.IsEmpty(player.Art(tvshow.clearlogo)) + String.IsEmpty(player.Art(tvshow.clearart))</visible>
+            <posx>col-17-begin</posx>
+            <posy>row-18-begin</posy>
+            <width>8-col</width>
+            <height>4-col</height>
+            <texture>$INFO[player.Art(tvshow.clearlogo)]</texture>
+            <aspectratio align="right">keep</aspectratio>
+            <!-- <colordiffuse>BBffffff</colordiffuse> -->
         </control>
         <control type="image">
             <include>dimensionsFullscreen</include>
@@ -51,6 +71,116 @@
                 <font>veryLarge</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[Player.SeekNumeric(hh:mm:ss)]</label>
+            </control>
+            <control type="label">
+                <visible>Player.Forwarding2x</visible>
+                <posx>0</posx>
+                <posy>12</posy>
+                <width>24-col</width>
+                <height>2-row</height>
+                <align>center</align>
+                <font>symbolVeryLarge</font>
+                <textcolor>textActive</textcolor>
+                <label>2x </label>
+            </control>
+            <control type="label">
+                <visible>Player.Forwarding4x</visible>
+                <posx>0</posx>
+                <posy>12</posy>
+                <width>24-col</width>
+                <height>2-row</height>
+                <align>center</align>
+                <font>symbolVeryLarge</font>
+                <textcolor>textActive</textcolor>
+                <label>4x </label>
+            </control>
+            <control type="label">
+                <visible>Player.Forwarding8x</visible>
+                <posx>0</posx>
+                <posy>12</posy>
+                <width>24-col</width>
+                <height>2-row</height>
+                <align>center</align>
+                <font>symbolVeryLarge</font>
+                <textcolor>textActive</textcolor>
+                <label>8x </label>
+            </control>
+            <control type="label">
+                <visible>Player.Forwarding16x</visible>
+                <posx>0</posx>
+                <posy>12</posy>
+                <width>24-col</width>
+                <height>2-row</height>
+                <align>center</align>
+                <font>symbolVeryLarge</font>
+                <textcolor>textActive</textcolor>
+                <label>16x </label>
+            </control>
+            <control type="label">
+                <visible>Player.Forwarding32x</visible>
+                <posx>0</posx>
+                <posy>12</posy>
+                <width>24-col</width>
+                <height>2-row</height>
+                <align>center</align>
+                <font>symbolVeryLarge</font>
+                <textcolor>textActive</textcolor>
+                <label>32x </label>
+            </control>
+            <control type="label">
+                <visible>Player.Rewinding2x</visible>
+                <posx>0</posx>
+                <posy>12</posy>
+                <width>24-col</width>
+                <height>2-row</height>
+                <align>center</align>
+                <font>symbolVeryLarge</font>
+                <textcolor>textActive</textcolor>
+                <label> 2x</label>
+            </control>
+            <control type="label">
+                <visible>Player.Rewinding4x</visible>
+                <posx>0</posx>
+                <posy>12</posy>
+                <width>24-col</width>
+                <height>2-row</height>
+                <align>center</align>
+                <font>symbolVeryLarge</font>
+                <textcolor>textActive</textcolor>
+                <label> 4x</label>
+            </control>
+            <control type="label">
+                <visible>Player.Rewinding8x</visible>
+                <posx>0</posx>
+                <posy>12</posy>
+                <width>24-col</width>
+                <height>2-row</height>
+                <align>center</align>
+                <font>symbolVeryLarge</font>
+                <textcolor>textActive</textcolor>
+                <label> 8x</label>
+            </control>
+            <control type="label">
+                <visible>Player.Rewinding16x</visible>
+                <posx>0</posx>
+                <posy>12</posy>
+                <width>24-col</width>
+                <height>2-row</height>
+                <align>center</align>
+                <font>symbolVeryLarge</font>
+                <textcolor>textActive</textcolor>
+                <label> 16x</label>
+            </control>
+            <control type="label">
+                <visible>Player.Rewinding32x</visible>
+                <posx>0</posx>
+                <posy>12</posy>
+                <width>24-col</width>
+                <height>2-row</height>
+                <align>center</align>
+                <font>symbolVeryLarge</font>
+                <textcolor>textActive</textcolor>
+                <label> 32x</label>
             </control>
         </control>
         <control type="group">
@@ -120,6 +250,16 @@
 				<orientation>horizontal</orientation>
 				<visible>Player.SeekEnabled + !Player.ChannelPreviewActive</visible>
 			</control>
+            <control type="ranges">
+                <posx>0</posx>
+                <posy>84</posy>
+                <width>20-col</width>
+                <height>14</height>
+                <texturebg colordiffuse="00FFFFFF">colors/black.png</texturebg>
+                <lefttexture colordiffuse="55FFFFFF">colors/white.png</lefttexture>
+                <righttexture colordiffuse="55FFFFFF">colors/white.png</righttexture>
+                <info>Player.Chapters</info>
+            </control>
             <control type="label">
                 <posx>0</posx>
                 <posy>1-row</posy>
@@ -140,7 +280,18 @@
                 <textcolor>textActive</textcolor>
                 <label>[B]$INFO[Player.Time][/B] / [B]$INFO[Player.Duration][/B]    [B]$INFO[VideoPlayer.EndTime,$LOCALIZE[31160] ,][/B]</label>
                 <shadowcolor></shadowcolor>
-            </control>		
+            </control>
+            <control type="label">
+                <visible>!VideoPlayer.Content(LiveTV) + Player.HasVideo + !String.IsEqual(Player.ChapterCount,0) + !String.IsEqual(Player.ChapterCount,00)</visible>
+                <posx>0</posx>
+                <posy>3-row</posy>
+                <width>6-col</width>
+				<align>left</align>
+                <font>itemTitle</font>
+                <textcolor>textActive</textcolor>
+                <label>[B]$INFO[Player.Chapter][/B][B]$INFO[Player.ChapterCount, / ][/B]</label>
+                <shadowcolor></shadowcolor>
+            </control>	
 			<control type="label">
 				<visible>VideoPlayer.Content(LiveTV)</visible>
                 <posx>20-col</posx>

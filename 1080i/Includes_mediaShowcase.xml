@@ -55,7 +55,7 @@
             <animation effect="slide" time="200" end="-11880,0" condition="Control.HasFocus(999989) + !String.IsEmpty(listitem.tagline) + String.IsEmpty(listitem.art(discart))">condition</animation><!--no discart has tagline-->
             <animation effect="slide" time="200" end="-11562,0" condition="Control.HasFocus(999989) + String.IsEmpty(listitem.tagline) + String.IsEmpty(listitem.art(discart))">condition</animation><!--no discart no tagline-->
 
-            <control type="label">
+            <!-- <control type="label">
                 <visible>!String.IsEmpty(listitem.tagline)</visible>
                 <posx>col-1-begin</posx>
                 <posy>0</posy>
@@ -66,7 +66,7 @@
                 <textcolor>textActive</textcolor>
                 <label>$INFO[ListItem.tagline]</label>
                 <wrapmultiline>true</wrapmultiline>
-            </control>
+            </control> -->
             <control type="image">
                 <posx>2-col</posx>
                 <visible>!String.IsEmpty(ListItem.art(poster))</visible>

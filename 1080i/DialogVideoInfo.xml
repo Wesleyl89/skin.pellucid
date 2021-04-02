@@ -109,7 +109,7 @@
             <!--meta-->
             <control type="panel">
                 <posx>12</posx>
-                <posy>6-row</posy>
+                <posy>5-row</posy>
                 <width>10-col</width>
                 <height>6-row</height>
                 <enable>false</enable>
@@ -156,6 +156,16 @@
                         <label2>$INFO[ListItem.duration]</label2>
                         <thumb></thumb>
                     </item>
+                    <item>
+                        <label>$LOCALIZE[21805]</label>
+                        <label2>$INFO[ListItem.videoresolution]</label2>
+                        <thumb></thumb>
+                    </item>
+                    <item>
+                        <label>$LOCALIZE[368] ($LOCALIZE[205])</label>
+                        <label2>$INFO[ListItem.rating(imdb)] ($INFO[ListItem.votes(imdb)])</label2>
+                        <thumb></thumb>
+                    </item>
                 </content>
             </control>
             <!--content-->
@@ -177,7 +187,7 @@
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>9-row</posy>
+                    <posy>10-row</posy>
                     <font>textbox</font>
                     <width>660</width>
                     <align>left</align>
@@ -346,7 +356,7 @@
                 <control type="label">
                     <description>Episode title</description>
                     <posx>0</posx>
-                    <posy>2-row</posy>
+                    <posy>3-row</posy>
                     <width>12-col-gutter</width>
                     <height>2-row</height>
                     <align>left</align>
@@ -379,10 +389,33 @@
                         <label fallback="13205">$INFO[listitem.duration]    [COLOR textboxInactive]$INFO[listitem.filename][/COLOR]</label>
                     </control>
                 </control>
+                <control type="grouplist">
+                    <visible>Integer.IsGreater(listitem.votes(imdb),0)</visible>
+                    <posx>0</posx>
+                    <posy>18</posy>
+                    <width>12-col</width>
+                    <orientation>horizontal</orientation>
+                    <control type="label">
+                        <width>36</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>symbolLarge</font>
+                        <textcolor>textActive</textcolor>
+                        <label></label>
+                    </control>
+                    <control type="label">
+                        <width>10-col</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label fallback="13205">$INFO[listitem.rating(imdb)]         [COLOR textboxInactive]$INFO[listitem.votes(imdb)] $LOCALIZE[205][/COLOR]</label>
+                    </control>
+                </control>
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>5-row</posy>
+                    <posy>6-row</posy>
                     <font>textbox</font>
                     <width>12-col</width>
                     <align>left</align>

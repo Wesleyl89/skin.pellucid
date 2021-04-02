@@ -156,13 +156,25 @@
                     <control type="label">
                         <posx>1-col-indent</posx>
                         <posy>0</posy>
-                        <width>9-col</width>
+                        <width>8-col</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Title]</label>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <posx>10-col</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>right</align>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor></shadowcolor>
+                        <label>$INFO[ListItem.Rating(imdb)]</label>
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
@@ -232,13 +244,25 @@
                     <control type="label">
                         <posx>1-col-indent</posx>
                         <posy>0</posy>
-                        <width>9-col</width>
+                        <width>8-col</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Title]</label>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <posx>10-col</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>right</align>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor></shadowcolor>
+                        <label>$INFO[ListItem.Rating(imdb)]</label>
                         <scroll>false</scroll>
                     </control>
                     <control type="label">

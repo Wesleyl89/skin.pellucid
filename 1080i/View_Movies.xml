@@ -11,8 +11,16 @@
 	            <aspectratio>scale</aspectratio>
 				<fadetime>250</fadetime>
 	        </control>
+			<control type="image">
+				<visible>control.hasfocus(51)</visible>
+	            <include>dimensionsFullscreen</include>
+	            <texture fallback="colors/black.png">$INFO[container(51).listitem.art(fanart)]</texture>
+	            <colordiffuse>FF555555</colordiffuse>
+	            <aspectratio>scale</aspectratio>
+				<fadetime>250</fadetime>
+	        </control>
 			<control type="group" id="9101">
-				<visible>$EXP[isMovie] + !string.contains(container.folderpath,playlists) + !Skin.HasSetting(disableRecentMovies)</visible>
+				<visible>$EXP[isMovie] + !Skin.HasSetting(disableRecentMovies)</visible>
 				<animation type="Conditional" condition="!controlgroup(9101).hasfocus">
 	                <effect type="slide" start="0,0" end="0,-200" time="200"/>
 					<effect type="fade" start="100" end="0" time="200"/>

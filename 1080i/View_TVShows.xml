@@ -11,6 +11,14 @@
 	            <aspectratio>scale</aspectratio>
 				<fadetime>250</fadetime>
 	        </control>
+			<control type="image">	
+				<visible>control.hasfocus(52)</visible>
+	            <include>dimensionsFullscreen</include>
+	            <texture fallback="colors/black.png">$INFO[container(52).listitem.art(fanart)]</texture>
+	            <colordiffuse>FF555555</colordiffuse>
+	            <aspectratio>scale</aspectratio>
+				<fadetime>250</fadetime>
+	        </control>
 			<control type="group" id="9201">
 				<visible>$EXP[isTVShow] + !string.contains(container.folderpath,playlists) + !Skin.HasSetting(disableRecentTVShows)</visible>
 				<animation type="Conditional" condition="!controlgroup(9201).hasfocus">
