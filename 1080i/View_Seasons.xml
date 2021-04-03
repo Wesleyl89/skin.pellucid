@@ -20,6 +20,14 @@
                     <effect type="fade" start="100" end="0" time="200"/>
                 </animation>
                 <!--title-->
+				<control type="image">
+					<posx>22-col-gutter</posx>
+					<posy>4-row</posy>
+					<width>4-col</width>
+					<height>2-col</height>
+					<texture>$INFO[container.Art(tvshow.clearlogo)]</texture>
+					<aspectratio align="right">keep</aspectratio>
+				</control>
                 <control type="group">
 					<animation type="conditional" condition="!control.isvisible(58)">
 		                <effect type="fade" start="100" end="0" time="0"/>
@@ -50,7 +58,7 @@
 		                <align></align>
 		                <font>itemTitle</font>
 		                <textcolor>menuUnselected</textcolor>
-		                <label>$INFO[Container(58).ListItemAbsolute(2).genre]</label>
+		                <label>$INFO[Container(58).ListItemAbsolute(1).genre]</label>
 		            </control>
                 </control>
                 <!--content-->

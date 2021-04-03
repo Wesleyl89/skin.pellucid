@@ -102,6 +102,11 @@
                         <thumb></thumb>
                         <onclick>Powerdown()</onclick>
                     </item>
+                    <item id="9">
+                        <label>31043</label>
+                        <thumb></thumb>
+                        <onclick>ReloadSkin()</onclick>
+                    </item>
                 </content>
             </control>
         </control>
