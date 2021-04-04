@@ -19,6 +19,33 @@
 	            <aspectratio>scale</aspectratio>
 				<fadetime>250</fadetime>
 	        </control>
+			<control type="image">
+				<visible>control.hasfocus(9203) + !String.isEmpty(container(9203).listitem.art(clearlogo))</visible>
+				<posx>0</posx>
+				<posy>3-row</posy>
+				<height>3-row</height>
+	            <texture>$INFO[container(9203).listitem.art(clearlogo)]</texture>
+	            <aspectratio>keep</aspectratio>
+				<fadetime>250</fadetime>
+	        </control>
+			<control type="image">
+				<visible>control.hasfocus(9203) + !String.isEmpty(container(9203).listitem.art(tvshow.clearlogo))</visible>
+				<posx>0</posx>
+				<posy>3-row</posy>
+				<height>3-row</height>
+	            <texture>$INFO[container(9203).listitem.art(tvshow.clearlogo)]</texture>
+	            <aspectratio>keep</aspectratio>
+				<fadetime>250</fadetime>
+	        </control>
+			<control type="image">
+				<visible>control.hasfocus(52) + !String.isEmpty(container(52).listitem.art(clearlogo))</visible>
+				<posx>0</posx>
+				<posy>3-row</posy>
+				<height>3-row</height>
+	            <texture>$INFO[container(52).listitem.art(clearlogo)]</texture>
+	            <aspectratio>keep</aspectratio>
+				<fadetime>250</fadetime>
+	        </control>
 			<control type="group" id="9201">
 				<visible>$EXP[isTVShow] + !string.contains(container.folderpath,playlists) + !Skin.HasSetting(disableRecentTVShows)</visible>
 				<animation type="Conditional" condition="!controlgroup(9201).hasfocus">
@@ -279,7 +306,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.Art(poster)]</texture>
 						<bordersize>6</bordersize>
-						<colordiffuse>99FFFFFF</colordiffuse>
+						<!-- <colordiffuse>99FFFFFF</colordiffuse> -->
 					</control>
 					<control type="textbox">
 						<visible>String.IsEmpty(listitem.title)</visible>

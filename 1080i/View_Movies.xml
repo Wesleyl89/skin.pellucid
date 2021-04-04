@@ -19,6 +19,24 @@
 	            <aspectratio>scale</aspectratio>
 				<fadetime>250</fadetime>
 	        </control>
+			<control type="image">
+				<visible>control.hasfocus(9103) + !String.isEmpty(container(9103).listitem.art(clearlogo))</visible>
+				<posx>0</posx>
+				<posy>3-row</posy>
+				<height>3-row</height>
+	            <texture>$INFO[container(9103).listitem.art(clearlogo)]</texture>
+	            <aspectratio>keep</aspectratio>
+				<fadetime>250</fadetime>
+	        </control>
+			<control type="image">
+				<visible>control.hasfocus(51) + !String.isEmpty(container(51).listitem.art(clearlogo))</visible>
+				<posx>0</posx>
+				<posy>3-row</posy>
+				<height>3-row</height>
+	            <texture>$INFO[container(51).listitem.art(clearlogo)]</texture>
+	            <aspectratio>keep</aspectratio>
+				<fadetime>250</fadetime>
+	        </control>
 			<control type="group" id="9101">
 				<visible>$EXP[isMovie] + !Skin.HasSetting(disableRecentMovies)</visible>
 				<animation type="Conditional" condition="!controlgroup(9101).hasfocus">
@@ -268,7 +286,7 @@
 							<aspectratio>stretch</aspectratio>
 							<texture>$INFO[ListItem.Art(poster)]</texture>
 							<bordersize>6</bordersize>
-							<colordiffuse>99FFFFFF</colordiffuse>
+							<!-- <colordiffuse>99FFFFFF</colordiffuse> -->
 						</control>
 						<control type="textbox">
 							<visible>String.IsEmpty(listitem.title)</visible>
