@@ -146,8 +146,14 @@
 					<width>1</width>
 					<height>1</height>
 					<!-- <content sortby="random">videodb://movies/titles/</content> -->
-					<content sortby="random" limit="20">videodb://movies/titles/</content>
-					<content sortby="random" limit="20">videodb://tvshows/titles/</content>
+					<content sortby="random" limit="5">videodb://movies/titles/</content>
+					<content sortby="random" limit="5">videodb://tvshows/titles/</content>
+					<content sortby="random" limit="5">videodb://movies/titles/</content>
+					<content sortby="random" limit="5">videodb://tvshows/titles/</content>
+					<content sortby="random" limit="5">videodb://movies/titles/</content>
+					<content sortby="random" limit="5">videodb://tvshows/titles/</content>
+					<content sortby="random" limit="5">videodb://movies/titles/</content>
+					<content sortby="random" limit="5">videodb://tvshows/titles/</content>
 					<autoscroll time="15000">true</autoscroll> <!-- Time to show each image, in milliseconds -->
 					<itemlayout />
 					<focusedlayout />
