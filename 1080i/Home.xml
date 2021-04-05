@@ -125,9 +125,10 @@
 				<control type="multiimage">
 					<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
 					<include>dimensionsFullscreen</include>
-					<imagepath>$VAR[homeBackgroundLocation]</imagepath>
-					<timeperimage>45000</timeperimage>
-					<fadetime>200</fadetime>
+					<!-- <imagepath>$VAR[homeBackgroundLocation]</imagepath> -->
+					<imagepath>$INFO[Container(12341).ListItem.Art(fanart)]</imagepath>
+					<!-- <timeperimage>45000</timeperimage> -->
+					<fadetime>2000</fadetime>
 					<pauseatend>10000</pauseatend>
 					<randomize>true</randomize>
 					<loop>yes</loop>
@@ -139,6 +140,17 @@
 					<texture>vignette.png</texture>
 					<colordiffuse>ffffffff</colordiffuse>
 					<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="list" id="12341">
+					<top>-1000</top> <!-- Don't need to see it, but can't change its visibility. Put it off screen -->
+					<width>1</width>
+					<height>1</height>
+					<!-- <content sortby="random">videodb://movies/titles/</content> -->
+					<content sortby="random" limit="20">videodb://movies/titles/</content>
+					<content sortby="random" limit="20">videodb://tvshows/titles/</content>
+					<autoscroll time="15000">true</autoscroll> <!-- Time to show each image, in milliseconds -->
+					<itemlayout />
+					<focusedlayout />
 				</control>
 			</control>
 			<!--mini window-->
