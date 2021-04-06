@@ -147,6 +147,7 @@
                         <thumb></thumb>
                     </item>
                     <item>
+                        <visible>!String.IsEmpty(ListItem.director)</visible>
                         <label>$LOCALIZE[20339]</label>
                         <label2>$INFO[ListItem.director]</label2>
                         <thumb></thumb>
@@ -157,13 +158,15 @@
                         <thumb></thumb>
                     </item>
                     <item>
+                        <visible>!String.IsEmpty(ListItem.videoresolution)</visible>
                         <label>$LOCALIZE[21805]</label>
-                        <label2>$INFO[ListItem.videoresolution]</label2>
+                        <label2>$VAR[resolutionDisplay]</label2>
                         <thumb></thumb>
                     </item>
                     <item>
+                        <visible>!String.IsEmpty(ListItem.rating(imdb))</visible>
                         <label>$LOCALIZE[368] ($LOCALIZE[205])</label>
-                        <label2>$INFO[ListItem.rating(imdb)] ($INFO[ListItem.votes(imdb)])</label2>
+                        <label2>$INFO[ListItem.rating(imdb)] $VAR[hasVotes,(,)]</label2>
                         <thumb></thumb>
                     </item>
                 </content>

@@ -112,4 +112,11 @@
         <value condition="container.content(tvshows)">$INFO[listitem.filenameandpath,,extrafanart]</value>
         <value condition="container.content(seasons)">$INFO[container.listitem.path,,extrafanart]</value>
     </variable>
+    <variable name="hasVotes">
+	    <value  condition="Integer.IsGreater(ListItem.votes(imdb),0)">$INFO[ListItem.Votes(imdb)]</value>
+    </variable>
+    <variable name="resolutionDisplay">
+        <value  condition="String.EndsWith(ListItem.videoresolution, K)">$INFO[ListItem.VideoResolution]</value>
+        <value>$INFO[ListItem.VideoResolution,,p]</value>
+    </variable>
 </includes>
