@@ -210,7 +210,7 @@
                     <label>31174</label>
                     <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=picturessubmenu)</onclick>
                 </control>
-				<control type="button" id="16">
+                <control type="button" id="16">
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Edit games menu</description>
                     <width>14-col</width>
@@ -225,7 +225,7 @@
                     <onclick>Skin.ToggleSetting(disableExtendedFanart)</onclick>
                     <selected>Skin.HasSetting(disableExtendedFanart)</selected>
                 </control>
-				<control type="radiobutton" id="18">
+                <control type="radiobutton" id="18">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Disable recently added Movies</description>
                     <width>14-col</width>
@@ -233,7 +233,7 @@
                     <onclick>Skin.ToggleSetting(disableRecentMovies)</onclick>
                     <selected>Skin.HasSetting(disableRecentMovies)</selected>
                 </control>
-				<control type="radiobutton" id="19">
+                <control type="radiobutton" id="19">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Disable recently added TVShows</description>
                     <width>14-col</width>
@@ -241,7 +241,7 @@
                     <onclick>Skin.ToggleSetting(disableRecentTVShows)</onclick>
                     <selected>Skin.HasSetting(disableRecentTVShows)</selected>
                 </control>
-				<control type="radiobutton" id="20">
+                <control type="radiobutton" id="20">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Disable recently added Albums</description>
                     <width>14-col</width>

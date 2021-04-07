@@ -17,8 +17,8 @@
                 <pagecontrol>60</pagecontrol>
                 <scrolltime tween="sine" easing="inout">200</scrolltime>
                 <itemlayout width="23-col" height="3-row">
-					<control type="image">
-						<visible>!listitem.isplaying</visible>
+                    <control type="image">
+                        <visible>!listitem.isplaying</visible>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>105</width>
@@ -27,8 +27,8 @@
                         <texture border="0">colors/black.png</texture>
                         <colordiffuse>overlay</colordiffuse>
                     </control>
-					<control type="image">
-						<visible>!listitem.isplaying</visible>
+                    <control type="image">
+                        <visible>!listitem.isplaying</visible>
                         <posx>108</posx>
                         <posy>0</posy>
                         <width>1620</width>
@@ -37,11 +37,11 @@
                         <texture border="0">colors/black.png</texture>
                         <colordiffuse>overlay</colordiffuse>
                     </control>
-					<control type="image">
-						<animation type="conditional" condition="true">
-							<effect type="fade" start="100" end="50" time="0"/>
-						</animation>
-						<visible>ListItem.IsPlaying</visible>
+                    <control type="image">
+                        <animation type="conditional" condition="true">
+                            <effect type="fade" start="100" end="50" time="0"/>
+                        </animation>
+                        <visible>ListItem.IsPlaying</visible>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>105</width>
@@ -50,11 +50,11 @@
                         <texture border="0">colors/white.png</texture>
                         <colordiffuse>highlight</colordiffuse>
                     </control>
-					<control type="image">
-						<animation type="conditional" condition="player.paused">
-							<effect type="fade" start="100" end="50" time="0"/>
-						</animation>
-						<visible>ListItem.IsPlaying</visible>
+                    <control type="image">
+                        <animation type="conditional" condition="player.paused">
+                            <effect type="fade" start="100" end="50" time="0"/>
+                        </animation>
+                        <visible>ListItem.IsPlaying</visible>
                         <posx>108</posx>
                         <posy>0</posy>
                         <width>1620</width>
@@ -63,7 +63,7 @@
                         <texture border="0">colors/white.png</texture>
                         <colordiffuse>highlight</colordiffuse>
                     </control>
-					<control type="image">
+                    <control type="image">
                         <visible>ListItem.IsPlaying + !player.paused</visible>
                         <posx>18</posx>
                         <posy>0</posy>
@@ -76,7 +76,7 @@
                         </animation>
                     </control>
                     <control type="label">
-						<visible>ListItem.IsPlaying + !player.paused + Skin.HasSetting(lowPowerMode)</visible>
+                        <visible>ListItem.IsPlaying + !player.paused + Skin.HasSetting(lowPowerMode)</visible>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>105</width>
@@ -108,7 +108,7 @@
                         <width>105</width>
                         <height>105</height>
                         <aspectratio>scale</aspectratio>
-						<bordersize>1</bordersize>
+                        <bordersize>1</bordersize>
                         <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
                     </control>
                     <control type="label">
@@ -147,10 +147,10 @@
                     </control>
                 </itemlayout>
                 <focusedlayout width="23-col" height="3-row">
-					<control type="image">
-						<animation type="focus">
-							<effect type="fade" start="100" end="33" time="0"/>
-						</animation>
+                    <control type="image">
+                        <animation type="focus">
+                            <effect type="fade" start="100" end="33" time="0"/>
+                        </animation>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>105</width>
@@ -159,10 +159,10 @@
                         <texture border="0">colors/white.png</texture>
                         <colordiffuse>highlight</colordiffuse>
                     </control>
-					<control type="image">
-						<animation type="conditional" condition="player.playing">
-							<effect type="fade" start="100" end="50" time="0"/>
-						</animation>
+                    <control type="image">
+                        <animation type="conditional" condition="player.playing">
+                            <effect type="fade" start="100" end="50" time="0"/>
+                        </animation>
                         <posx>108</posx>
                         <posy>0</posy>
                         <width>1620</width>
@@ -206,7 +206,7 @@
                         <posy>0</posy>
                         <width>105</width>
                         <height>105</height>
-						<bordersize>1</bordersize>
+                        <bordersize>1</bordersize>
                         <aspectratio>scale</aspectratio>
                         <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
                         <animation type="focus" loop="false" reversible="false">

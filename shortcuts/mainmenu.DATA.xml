@@ -39,16 +39,16 @@
         <thumb />
         <action>ActivateWindow(Radiochannels)</action>
     </shortcut>
-	<shortcut>
-		<visible>Library.HasContent(Movies)</visible>
+    <shortcut>
+        <visible>Library.HasContent(Movies)</visible>
         <label>342</label>
         <label2>32034</label2>
         <icon>DefaultAddon.png</icon>
         <thumb />
         <action>ActivateWindow(Videos,videodb://movies/titles/)</action>
     </shortcut>
-	<shortcut>
-		<visible>Library.HasContent(TVshows)</visible>
+    <shortcut>
+        <visible>Library.HasContent(TVshows)</visible>
         <label>20343</label>
         <label2>32034</label2>
         <icon>DefaultAddon.png</icon>
@@ -79,7 +79,7 @@
         <thumb />
         <action>ActivateWindow(Music,Files)</action>
     </shortcut>
-	<shortcut>
+    <shortcut>
         <visible>Library.HasContent(Music)</visible>
         <label>31229</label>
         <label2>32034</label2>
@@ -94,7 +94,7 @@
         <thumb />
         <action>ActivateWindow(games)</action>
     </shortcut>
-	<shortcut>
+    <shortcut>
         <label>12600</label>
         <label2>32034</label2>
         <icon>DefaultAddon.png</icon>

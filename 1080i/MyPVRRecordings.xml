@@ -6,7 +6,7 @@
     <animation type="windowClose">
         <effect type="fade" start="100" end="0" time="300"/>
     </animation>
-	<views>50</views>
+    <views>50</views>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
@@ -48,7 +48,7 @@
                             <height>66</height>
                             <aspectratio scalediffuse="false">stretch</aspectratio>
                             <texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
-							<colordiffuse>overlay</colordiffuse>
+                            <colordiffuse>overlay</colordiffuse>
                         </control>
                         <control type="label">
                             <visible>!String.IsEmpty(ListItem.playcount) + !ListItem.IsResumable</visible>
@@ -161,7 +161,7 @@
             </control>
             <!--page header-->
             <control type="group">
-				<include>pageHeader</include>    
+                <include>pageHeader</include>    
             </control>
         </control>
         <!--mini window-->

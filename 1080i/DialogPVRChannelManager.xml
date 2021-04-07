@@ -29,7 +29,7 @@
                     <colordiffuse>highlight</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-				<control type="image">
+                <control type="image">
                     <posx>0</posx>
                     <posy>84</posy>
                     <width>16-col</width>
@@ -152,7 +152,7 @@
                 <control type="grouplist">
                     <posx>8-col</posx>
                     <posy>168</posy>
-					<itemgap>0</itemgap>
+                    <itemgap>0</itemgap>
                     <control type="radiobutton" id="7">
                         <description>Channel activated</description>
                         <width>564</width>
@@ -307,14 +307,14 @@
                         </control>
                     </focusedlayout>
                     <content>
-						<item id="5">
-	                        <description>Switch TV / Radio</description>
-	                        <label>31236</label>
-	                        <label2></label2>
-	                        <thumb></thumb>
-	                        <onclick>SendClick(34)</onclick>
-	                    </item>
-						<item id="2">
+                        <item id="5">
+                            <description>Switch TV / Radio</description>
+                            <label>31236</label>
+                            <label2></label2>
+                            <thumb></thumb>
+                            <onclick>SendClick(34)</onclick>
+                        </item>
+                        <item id="2">
                             <description>Apply Button</description>
                             <label>14070</label>
                             <label2></label2>
@@ -343,7 +343,7 @@
         <!--dialog control buttons-->
         <control type="group">
             <visible>false</visible>
-			<control type="togglebutton" id="34">
+            <control type="togglebutton" id="34">
                 <description>Switch TV / Radio</description>
             </control>
             <control type="button" id="4">

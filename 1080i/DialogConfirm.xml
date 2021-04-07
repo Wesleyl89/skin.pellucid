@@ -10,17 +10,17 @@
             <!--animations-->
             <include>modalDialogInOut</include>
             <!--progress-->
-			<control type="label">
-					<posx>0</posx>
-	                <posy>-72</posy>
-	                <width>8-col-gutter</width>
-	                <height>2-row</height>
-	                <wrapmultiline>true</wrapmultiline>
-	                <font>mediumStrong</font>
-	                <textcolor>textActive</textcolor>
-					<label>$INFO[System.Progressbar,,%]</label>
-				</control>
-			<!--text-->
+            <control type="label">
+                    <posx>0</posx>
+                    <posy>-72</posy>
+                    <width>8-col-gutter</width>
+                    <height>2-row</height>
+                    <wrapmultiline>true</wrapmultiline>
+                    <font>mediumStrong</font>
+                    <textcolor>textActive</textcolor>
+                    <label>$INFO[System.Progressbar,,%]</label>
+                </control>
+            <!--text-->
             <control type="label" id="1">
                 <description>heading</description>
                 <posx>0</posx>
@@ -80,9 +80,9 @@
                        <texture>colors/white.png</texture>
                        <colordiffuse>highlight</colordiffuse>
                        <include>spinFocusIcon</include>
-		   				<animation type="conditional" condition="true">
-		   					<effect type="fade" start="100" end="50" time="0"/>
-		   				</animation>
+                           <animation type="conditional" condition="true">
+                               <effect type="fade" start="100" end="50" time="0"/>
+                           </animation>
                    </control>
                    <control type="image">
                        <posx>1-col</posx>

@@ -11,8 +11,8 @@
             <onleft>9000</onleft>
             <onright>60</onright>
             <onback>9000</onback>
-			<ondown>59</ondown>
-			<onup>59</onup>
+            <ondown>59</ondown>
+            <onup>59</onup>
             <scrolltime tween="cubic" easing="out">600</scrolltime>
             <pagecontrol>60</pagecontrol>
             <itemlayout width="444" height="360">
@@ -35,7 +35,7 @@
                     <aspectratio>scale</aspectratio>
                     <texture>$INFO[Listitem.Art(thumb)]</texture>
                     <bordersize>6</bordersize>
-					<colordiffuse>99ffffff</colordiffuse>
+                    <colordiffuse>99ffffff</colordiffuse>
                 </control>
                 <control type="label">
                     <posx>12</posx>
@@ -61,7 +61,7 @@
             <focusedlayout width="444" height="360">
                 <control type="group">
                     <include>focusThumb</include>
-					<control type="image">
+                    <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>6-col-gutter</width>

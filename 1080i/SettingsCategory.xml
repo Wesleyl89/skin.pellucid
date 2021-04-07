@@ -4,8 +4,8 @@
     <controls>
         <!--background-->
         <include>globalBackground</include>
-		<!--mini window-->
-		<include>miniVideoPlayer</include>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
         <!--placeholder label for current setting group title-->
         <control type="label" id="2">
             <visible>false</visible>
@@ -61,12 +61,12 @@
                 <onclick>SettingsLevelChange</onclick>
                 <onup>3</onup>
                 <onright>5</onright>
-				<width>276</width>
+                <width>276</width>
             </control>
             <control type="grouplist" id="3">
-				<animation type="conditional" condition="control.hasfocus(1234)">
-		            <effect type="fade" start="100" end="80" time="100"/>
-		        </animation>
+                <animation type="conditional" condition="control.hasfocus(1234)">
+                    <effect type="fade" start="100" end="80" time="100"/>
+                </animation>
                 <posx>0</posx>
                 <posy>84</posy>
                 <width></width>

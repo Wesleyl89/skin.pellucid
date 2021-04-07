@@ -8,7 +8,7 @@
         <thumb />
         <action>activateWindow(1103)</action>
     </shortcut>
-	<shortcut>
+    <shortcut>
         <visible>MusicPlayer.HasNext</visible>
         <label>31248</label>
         <label2>10005</label2>

@@ -4,7 +4,7 @@
     <color name="background">ff1a1a1a</color>
     <color name="highlight">ffad1e4e</color>
 
-	<color name="shighlight">fff03c69</color>
+    <color name="shighlight">fff03c69</color>
     <color name="overlay">44ffffff</color>
     <color name="textActive">fff0f0f0</color>
     <color name="textDisabled">ff757575</color>

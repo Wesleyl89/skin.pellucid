@@ -19,7 +19,7 @@
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-			<control type="image">
+            <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>20-col</width>
@@ -28,7 +28,7 @@
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-			<control type="image">
+            <control type="image">
                 <posx>0</posx>
                 <posy>84</posy>
                 <width>1140</width>
@@ -351,7 +351,7 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                     </control>
                 </focusedlayout>
                 <content>
-					<item id="5">
+                    <item id="5">
                         <description>Switch TV / Radio</description>
                         <label>31236</label>
                         <label2></label2>
@@ -392,7 +392,7 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
         <!--hidden dialog controls-->
         <control type="group">
             <visible>false</visible>
-			<control type="togglebutton" id="34">
+            <control type="togglebutton" id="34">
                 <description>Switch TV / Radio</description>
             </control>
             <control type="button" id="26">

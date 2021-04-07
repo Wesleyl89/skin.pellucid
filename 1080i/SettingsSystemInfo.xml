@@ -21,27 +21,27 @@
                 <label>$LOCALIZE[31206]</label>
                 <textcolor>textActive</textcolor>
             </control>
-			<!--time-->
-			<control type="label">
-	            <posx>24-col</posx>
-	            <posy>0</posy>
-	            <width>12-col</width>
-	            <align>right</align>
-	            <font>pageTitle</font>
-	            <label>$INFO[System.Time]</label>
-	            <textcolor>textActive</textcolor>
-	        </control>
-			<!--date-->
-	        <control type="label">
-	            <posx>24-col</posx>
-	            <posy>1-row</posy>
-	            <width>12-col</width>
-				<height>2-row</height>
-				<align>right</align>
-	            <font>pageSubTitle</font>
-	            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
-	            <textcolor>textActive</textcolor>
-	        </control>
+            <!--time-->
+            <control type="label">
+                <posx>24-col</posx>
+                <posy>0</posy>
+                <width>12-col</width>
+                <align>right</align>
+                <font>pageTitle</font>
+                <label>$INFO[System.Time]</label>
+                <textcolor>textActive</textcolor>
+            </control>
+            <!--date-->
+            <control type="label">
+                <posx>24-col</posx>
+                <posy>1-row</posy>
+                <width>12-col</width>
+                <height>2-row</height>
+                <align>right</align>
+                <font>pageSubTitle</font>
+                <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
+                <textcolor>textActive</textcolor>
+            </control>
             <!--source subtitle / content selector-->
             <control type="list" id="95">
                 <posx>0</posx>
@@ -54,7 +54,7 @@
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>4-col</width>
-						<height>2-row</height>
+                        <height>2-row</height>
                         <font>pageSubTitle</font>
                         <textcolor>44FFFFFF</textcolor>
                         <shadowcolor></shadowcolor>
@@ -66,7 +66,7 @@
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>4-col</width>
-						<height>2-row</height>
+                        <height>2-row</height>
                         <font>pageSubTitle</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor></shadowcolor>
@@ -148,7 +148,7 @@
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
-				<focusedlayout />
+                <focusedlayout />
                 <content>
                     <item id="1">
                         <description>XBMC Version</description>

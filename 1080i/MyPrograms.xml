@@ -3,7 +3,7 @@
     <defaultcontrol always="true">9999</defaultcontrol>
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <include>fadeInOut</include>
-	<views>50</views>
+    <views>50</views>
     <controls>
         <!--page container group-->
         <control type="group">
@@ -15,107 +15,107 @@
                 <!--source content-->
                 <control type="group">
                     <include>contentOpen</include>
-					<control type="panel" id="50">
-			            <visible>$EXP[isVideoList]</visible>
-			            <posx>col-1-begin</posx>
-			            <posy>row-5-begin</posy>
-			            <width>24-col</width>
-			            <height>23-row</height>
-			            <onleft>9000</onleft>
-			            <onright>60</onright>
-			            <ondown>50</ondown>
-			            <onup>50</onup>
-			            <pagecontrol>60</pagecontrol>
-			            <itemlayout width="24-col" height="2-row">
-			                <control type="image">
-			                    <posx>0</posx>
-			                    <posy>3</posy>
-			                    <width>66</width>
-			                    <height>66</height>
-			                    <aspectratio scalediffuse="false">stretch</aspectratio>
-			                    <texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
-			                	<colordiffuse>overlay</colordiffuse>
-							</control>
-			                <control type="image">
-			                    <posx>1-col</posx>
-			                    <posy>0</posy>
-			                    <width>23-col</width>
-			                    <height>69</height>
-			                    <aspectratio>stretch</aspectratio>
-			                    <texture border="0">colors/black.png</texture>
-			                    <colordiffuse>overlay</colordiffuse>
-			                </control>
-			                <control type="label">
-			                    <posx>1-col-indent</posx>
-			                    <posy>0</posy>
-			                    <width>11-col-gutter</width>
-			                    <height>2-row</height>
-			                    <aligny>center</aligny>
-			                    <font>itemTitle</font>
-			                    <textcolor>textActive</textcolor>
-			                    <shadowcolor></shadowcolor>
-			                    <label>$INFO[ListItem.Label]</label>
-			                </control>
-			                <control type="label">
-			                    <posx>12-col-gutter</posx>
-			                    <posy>0</posy>
-			                    <width>12-col</width>
-			                    <height>2-row</height>
-			                    <aligny>center</aligny>
-			                    <align>right</align>
-			                    <font>itemSubTitle</font>
-			                    <textcolor>textActive</textcolor>
-			                    <shadowcolor></shadowcolor>
-			                    <label>$INFO[ListItem.AddonSummary]</label>
-			                </control>
-			            </itemlayout>
-			            <focusedlayout width="24-col" height="2-row">
-			                <control type="image">
-			                    <posx>0</posx>
-			                    <posy>3</posy>
-			                    <width>66</width>
-			                    <height>66</height>
-			                    <aspectratio scalediffuse="false">stretch</aspectratio>
-			                    <texture fallback="colors/white.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
-			                    <animation type="focus" loop="false" reversible="false">
-			                        <effect type="fade" time="500"/>
-			                        <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-			                    </animation>
-			                </control>
-			                <control type="image">
-			                    <posx>1-col</posx>
-			                    <posy>0</posy>
-			                    <width>23-col</width>
-			                    <height>2-row</height>
-			                    <aspectratio>stretch</aspectratio>
-			                    <texture border="0">colors/white.png</texture>
-			                    <colordiffuse>highlight</colordiffuse>
-			                </control>
-			                <control type="label">
-			                    <posx>1-col-indent</posx>
-			                    <posy>0</posy>
-			                    <width>11-col-gutter</width>
-			                    <height>2-row</height>
-			                    <aligny>center</aligny>
-			                    <font>itemTitle</font>
-			                    <textcolor>textActive</textcolor>
-			                    <shadowcolor></shadowcolor>
-			                    <label>$INFO[ListItem.Label]</label>
-			                </control>
-			                <control type="label">
-			                    <posx>12-col-gutter</posx>
-			                    <posy>0</posy>
-			                    <width>12-col</width>
-			                    <height>2-row</height>
-			                    <aligny>center</aligny>
-			                    <align>right</align>
-			                    <font>itemSubTitle</font>
-			                    <textcolor>textActive</textcolor>
-			                    <shadowcolor></shadowcolor>
-			                    <label>$INFO[ListItem.AddonSummary]</label>
-			                </control>
-			            </focusedlayout>
-			        </control>
+                    <control type="panel" id="50">
+                        <visible>$EXP[isVideoList]</visible>
+                        <posx>col-1-begin</posx>
+                        <posy>row-5-begin</posy>
+                        <width>24-col</width>
+                        <height>23-row</height>
+                        <onleft>9000</onleft>
+                        <onright>60</onright>
+                        <ondown>50</ondown>
+                        <onup>50</onup>
+                        <pagecontrol>60</pagecontrol>
+                        <itemlayout width="24-col" height="2-row">
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>3</posy>
+                                <width>66</width>
+                                <height>66</height>
+                                <aspectratio scalediffuse="false">stretch</aspectratio>
+                                <texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+                                <colordiffuse>overlay</colordiffuse>
+                            </control>
+                            <control type="image">
+                                <posx>1-col</posx>
+                                <posy>0</posy>
+                                <width>23-col</width>
+                                <height>69</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture border="0">colors/black.png</texture>
+                                <colordiffuse>overlay</colordiffuse>
+                            </control>
+                            <control type="label">
+                                <posx>1-col-indent</posx>
+                                <posy>0</posy>
+                                <width>11-col-gutter</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>itemTitle</font>
+                                <textcolor>textActive</textcolor>
+                                <shadowcolor></shadowcolor>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <posx>12-col-gutter</posx>
+                                <posy>0</posy>
+                                <width>12-col</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <align>right</align>
+                                <font>itemSubTitle</font>
+                                <textcolor>textActive</textcolor>
+                                <shadowcolor></shadowcolor>
+                                <label>$INFO[ListItem.AddonSummary]</label>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout width="24-col" height="2-row">
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>3</posy>
+                                <width>66</width>
+                                <height>66</height>
+                                <aspectratio scalediffuse="false">stretch</aspectratio>
+                                <texture fallback="colors/white.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+                                <animation type="focus" loop="false" reversible="false">
+                                    <effect type="fade" time="500"/>
+                                    <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
+                                </animation>
+                            </control>
+                            <control type="image">
+                                <posx>1-col</posx>
+                                <posy>0</posy>
+                                <width>23-col</width>
+                                <height>2-row</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture border="0">colors/white.png</texture>
+                                <colordiffuse>highlight</colordiffuse>
+                            </control>
+                            <control type="label">
+                                <posx>1-col-indent</posx>
+                                <posy>0</posy>
+                                <width>11-col-gutter</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>itemTitle</font>
+                                <textcolor>textActive</textcolor>
+                                <shadowcolor></shadowcolor>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <posx>12-col-gutter</posx>
+                                <posy>0</posy>
+                                <width>12-col</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <align>right</align>
+                                <font>itemSubTitle</font>
+                                <textcolor>textActive</textcolor>
+                                <shadowcolor></shadowcolor>
+                                <label>$INFO[ListItem.AddonSummary]</label>
+                            </control>
+                        </focusedlayout>
+                    </control>
                 </control>
             </control>
             <!--page scrollbar-->
@@ -130,9 +130,9 @@
                     <onback>9999</onback>
                 </control>
             </control>
-			<!--page header-->
+            <!--page header-->
             <control type="group">
-				<include>pageHeader</include>    
+                <include>pageHeader</include>    
             </control>
         </control>
         <!--mini window-->

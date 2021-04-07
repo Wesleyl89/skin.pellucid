@@ -4,12 +4,12 @@
     <animation type="windowClose">
         <effect type="fade" start="100" end="0" time="300"/>
     </animation>
-	<views>50</views>
+    <views>50</views>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
         <control type="group">
-	        <!--window fader-->
+            <!--window fader-->
             <animation type="conditional" condition="window.next(0) | window.next(1)">
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation>
@@ -160,7 +160,7 @@
                     </focusedlayout>
                 </control>
             </control>
-			<!--page scrollbar-->
+            <!--page scrollbar-->
             <control type="group" id="9400">
                 <visible>Control.IsVisible(60)</visible>
                 <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(9400).hasfocus">conditional</animation>
@@ -174,7 +174,7 @@
             </control>
             <!--page header-->
             <control type="group">
-				<include>pageHeader</include>    
+                <include>pageHeader</include>    
             </control>
         </control>
         <!--hub menu-->

@@ -4,7 +4,7 @@
     <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu|gamesubmenu)</onunload>
     <onunload>control.setfocus(9000)</onunload>
     <controls>
-		<!--background-->
+        <!--background-->
         <include>globalBackground</include>
         <control type="group">
             <posx>col-4-begin</posx>
@@ -48,13 +48,13 @@
                 <textcolor>textActive</textcolor>
                 <shadowcolor></shadowcolor>
             </control>
-			<!--options-->
+            <!--options-->
             <control type="grouplist" id="300">
                 <posx>0</posx>
                 <posy>84</posy>
                 <width>276</width>
-				<height>17-row</height>
-				<itemgap>0</itemgap>
+                <height>17-row</height>
+                <itemgap>0</itemgap>
                 <control type="button" id="301">
                     <description>Add a new shortcut</description>
                     <onright>211</onright>
@@ -98,8 +98,8 @@
                     <label>$ADDON[script.skinshortcuts 32028]</label>
                 </control>
             </control>
-			<!-- id 211 - Current shortcuts -->
-			<!--options-->
+            <!-- id 211 - Current shortcuts -->
+            <!--options-->
             <control type="list" id="211">
                 <posx>4-col</posx>
                 <posy>84</posy>
@@ -144,7 +144,7 @@
                     </control>
                 </focusedlayout>
             </control>
-		</control>     
+        </control>     
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

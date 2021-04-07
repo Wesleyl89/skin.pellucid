@@ -3,8 +3,8 @@
     <defaultcontrol always="true">9</defaultcontrol>
     <controls>
         <include>globalBackground</include>
-		<!--mini window-->
-		<include>miniVideoPlayer</include>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
         <!--configuration options-->
         <control type="group">
             <posx>col-4-begin</posx>
@@ -183,13 +183,13 @@
             </control>
             <control type="edit" id="12">
                 <description>Default Edit</description>
-				<font>buttonTitle</font>
-				<textoffsetx>24</textoffsetx>
+                <font>buttonTitle</font>
+                <textoffsetx>24</textoffsetx>
             </control>
-			<control type="sliderex" id="13">
+            <control type="sliderex" id="13">
                 <description>Default Slider</description>
             </control>
-			<control type="label" id="14">
+            <control type="label" id="14">
                 <label></label>
                 <textoffsetx>24</textoffsetx>
                 <height>2-row</height>

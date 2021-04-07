@@ -3,9 +3,9 @@
     <include name="episodes">
         <!--fanart-->
         <control type="group">
-			<animation type="conditional" condition="control.isvisible(53)">
+            <animation type="conditional" condition="control.isvisible(53)">
                 <effect type="fade" start="0" end="100" time="1500"/>
-				<effect type="slide" start="-100,0" end="0,0" time="300"/>
+                <effect type="slide" start="-100,0" end="0,0" time="300"/>
             </animation>
             <visible>String.Contains(container.folderpath,videodb://) + !String.IsEmpty(container.folderpath) + container.content(episodes) + !String.Contains(Container.folderpath,plugin)</visible>
             <posy>0</posy>
@@ -42,7 +42,7 @@
                 <texture fallback="colors/black.png" border="0">$INFO[fanart.image]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
             </control> -->
-			<control type="image">
+            <control type="image">
                 <visible>!String.IsEmpty(container.art(season.poster)) + String.IsEmpty(container.art(tvshow.fanart))</visible>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -111,7 +111,7 @@
                 <textcolor>textActive</textcolor>
                 <label>$INFO[Container.ShowTitle]</label>
             </control>
-			<control type="label">
+            <control type="label">
                 <posx>24</posx>
                 <posy>78</posy>
                 <width>12-col</width>
@@ -126,23 +126,23 @@
         <control type="group">
             <!--tvhsow library-sourced episode list-->
             <control type="panel" id="53">
-				<animation type="conditional" condition="!control.isvisible(53)">
-	                <effect type="fade" start="100" end="0" time="0"/>
-	            </animation>
-				<animation type="conditional" condition="control.isvisible(53)">
-	                <effect type="fade" start="0" end="100" time="250" delay="150"/>
-	            </animation>
+                <animation type="conditional" condition="!control.isvisible(53)">
+                    <effect type="fade" start="100" end="0" time="0"/>
+                </animation>
+                <animation type="conditional" condition="control.isvisible(53)">
+                    <effect type="fade" start="0" end="100" time="250" delay="150"/>
+                </animation>
                 <visible>$EXP[isEpisode] + !String.Contains(container.folderpath,smb://) + String.Contains(container.folderpath,videodb://)</visible>
                 <posx>978</posx>
                 <posy>row-9-begin</posy>
                 <width>12-col</width>
                 <height>19-row</height>
                 <onleft>9000</onleft>
-				<onright>60</onright>
-				<pagecontrol>60</pagecontrol>
-				<ondown>53</ondown>
-				<onup>53</onup>
-				<movement>4</movement>
+                <onright>60</onright>
+                <pagecontrol>60</pagecontrol>
+                <ondown>53</ondown>
+                <onup>53</onup>
+                <movement>4</movement>
                 <itemlayout width="12-col" height="2-row">
                     <control type="image">
                         <posx>0</posx>
@@ -230,9 +230,9 @@
                 </itemlayout>
                 <focusedlayout width="12-col" height="2-row">
                     <control type="image">
-						<animation type="focus">
-				            <effect type="fade" start="100" end="50" time="0"/>
-				        </animation>
+                        <animation type="focus">
+                            <effect type="fade" start="100" end="50" time="0"/>
+                        </animation>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>1-col-textbox</width>

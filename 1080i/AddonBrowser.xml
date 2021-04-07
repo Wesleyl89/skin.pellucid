@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">50</defaultcontrol>
-	<views>50,51</views>
+    <views>50,51</views>
     <controls>
         <include>globalBackground</include>
-		<!--mini window-->
-		<include>miniVideoPlayer</include>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
         <control type="group" id="9999">
             <control type="group">
                 <posx>col-9-begin</posx>
@@ -54,14 +54,14 @@
                     <onup>50</onup>
                     <itemgap>0</itemgap>
                     <itemlayout width="8-col" height="84">
-	                    <control type="image">
-	                        <posx>0</posx>
-	                        <posy>0</posy>
-	                        <width>69</width>
-	                        <height>69</height>
-	                        <aspectratio scalediffuse="false">stretch</aspectratio>
-	                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
-	                    </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>69</width>
+                            <height>69</height>
+                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                        </control>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -84,9 +84,9 @@
                     <focusedlayout width="8-col" height="84">
                         <control type="group">
                             <control type="image">
-								<animation type="focus">
-						            <effect type="fade" start="100" end="50" time="0"/>
-						        </animation>
+                                <animation type="focus">
+                                    <effect type="fade" start="100" end="50" time="0"/>
+                                </animation>
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <width>1-col</width>
@@ -159,7 +159,7 @@
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-				<control type="image">
+                <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>12-col</width>
@@ -191,14 +191,14 @@
                     <onup>51</onup>
                     <pagecontrol>60</pagecontrol>
                     <itemlayout width="12-col" height="84">
-	                    <control type="image">
-	                        <posx>0</posx>
-	                        <posy>0</posy>
-	                        <width>69</width>
-	                        <height>69</height>
-	                        <aspectratio scalediffuse="false">stretch</aspectratio>
-	                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
-	                    </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>69</width>
+                            <height>69</height>
+                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                        </control>
                         <control type="label">
                             <visible>ListItem.AddonLifecycleDesc</visible>
                             <posx>0</posx>
@@ -241,9 +241,9 @@
                         <control type="group">
                             <include>spinFocusIcon</include>
                             <control type="image">
-								<animation type="focus">
-						            <effect type="fade" start="100" end="50" time="0"/>
-						        </animation>
+                                <animation type="focus">
+                                    <effect type="fade" start="100" end="50" time="0"/>
+                                </animation>
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <width>1-col</width>

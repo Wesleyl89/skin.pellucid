@@ -23,11 +23,11 @@
             <posx>1236</posx>
             <posy>0</posy>
             <animation type="Windowopen">
-				<effect type="fade" start="0" end="100" time="400"/>
+                <effect type="fade" start="0" end="100" time="400"/>
                 <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="500"/>
             </animation>
             <animation type="windowClose">
-				<effect type="fade" start="100" end="0" time="1000"/>
+                <effect type="fade" start="100" end="0" time="1000"/>
                 <effect type="slide" start="0" end="800" tween="cubic" easing="in" time="500"/>
             </animation>
             <!--fade out if audio / video menu active-->
@@ -49,35 +49,35 @@
                 <posx>36</posx>
                 <posy>row-1-begin</posy>
                 <control type="grouplist">
-					<posx>0</posx>
+                    <posx>0</posx>
                     <posy>0</posy>
-					<orientation>vertical</orientation>
-					<itemgap>32</itemgap>
-					<control type="label">
-	                    <width>8-col</width>
-	                    <align>left</align>
-	                    <height>1-row</height>
-	                    <font>itemTitle</font>
-	                    <textcolor>textActive</textcolor>
-	                    <label>$INFO[videoplayer.TVShowTitle]$INFO[VideoPlayer.ChannelName]</label>
-	                </control>
-					<control type="label">
-	                    <width>8-col</width>
-	                    <align>left</align>
-	                    <height>3-row</height>
-	                    <aligny>center</aligny>
-	                    <font>largeTitle</font>
-	                    <textcolor>textActive</textcolor>
-						<wrapmultiline>true</wrapmultiline>
-	                    <label>$INFO[videoplayer.title]</label>
-	                </control>
-				</control>
-				<!--player position-->
-				<control type="group">
-					<posx>0</posx>
+                    <orientation>vertical</orientation>
+                    <itemgap>32</itemgap>
+                    <control type="label">
+                        <width>8-col</width>
+                        <align>left</align>
+                        <height>1-row</height>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[videoplayer.TVShowTitle]$INFO[VideoPlayer.ChannelName]</label>
+                    </control>
+                    <control type="label">
+                        <width>8-col</width>
+                        <align>left</align>
+                        <height>3-row</height>
+                        <aligny>center</aligny>
+                        <font>largeTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <wrapmultiline>true</wrapmultiline>
+                        <label>$INFO[videoplayer.title]</label>
+                    </control>
+                </control>
+                <!--player position-->
+                <control type="group">
+                    <posx>0</posx>
                     <posy>6-row</posy>
-					<control type="label">
-						<visible>!Pvr.IsPlayingTv</visible>
+                    <control type="label">
+                        <visible>!Pvr.IsPlayingTv</visible>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>2-col</width>
@@ -86,8 +86,8 @@
                         <label>[B]$LOCALIZE[31143][/B]</label>
                         <shadowcolor></shadowcolor>
                     </control>
-					<control type="label">
-						<visible>!Pvr.IsPlayingTv</visible>
+                    <control type="label">
+                        <visible>!Pvr.IsPlayingTv</visible>
                         <posx>0</posx>
                         <posy>32</posy>
                         <width>6-col</width>
@@ -97,8 +97,8 @@
                         <shadowcolor></shadowcolor>
                     </control>
 
-					<control type="label">
-						<visible>!Pvr.IsPlayingTv</visible>
+                    <control type="label">
+                        <visible>!Pvr.IsPlayingTv</visible>
                         <posx>3-col-gutter</posx>
                         <posy>0</posy>
                         <width>2-col</width>
@@ -107,8 +107,8 @@
                         <label>[B]$LOCALIZE[31245][/B]</label>
                         <shadowcolor></shadowcolor>
                     </control>
-					<control type="label">
-						<visible>!Pvr.IsPlayingTv</visible>
+                    <control type="label">
+                        <visible>!Pvr.IsPlayingTv</visible>
                         <posx>3-col-gutter</posx>
                         <posy>32</posy>
                         <width>6-col</width>
@@ -118,8 +118,8 @@
                         <shadowcolor></shadowcolor>
                     </control>
 
-					<control type="label">
-						<visible>Pvr.IsPlayingTv</visible>
+                    <control type="label">
+                        <visible>Pvr.IsPlayingTv</visible>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>2-col</width>
@@ -128,8 +128,8 @@
                         <label>[B]$LOCALIZE[31160][/B]</label>
                         <shadowcolor></shadowcolor>
                     </control>
-					<control type="label">
-						<visible>Pvr.IsPlayingTv</visible>
+                    <control type="label">
+                        <visible>Pvr.IsPlayingTv</visible>
                         <posx>0</posx>
                         <posy>32</posy>
                         <width>6-col</width>
@@ -139,8 +139,8 @@
                         <shadowcolor></shadowcolor>
                     </control>
 
-					<control type="label">
-						<visible>Pvr.IsPlayingTv</visible>
+                    <control type="label">
+                        <visible>Pvr.IsPlayingTv</visible>
                         <posx>3-col-gutter</posx>
                         <posy>0</posy>
                         <width>2-col</width>
@@ -149,8 +149,8 @@
                         <label>[B]$LOCALIZE[19031][/B]</label>
                         <shadowcolor></shadowcolor>
                     </control>
-					<control type="label">
-						<visible>Pvr.IsPlayingTv</visible>
+                    <control type="label">
+                        <visible>Pvr.IsPlayingTv</visible>
                         <posx>3-col-gutter</posx>
                         <posy>32</posy>
                         <width>6-col</width>
@@ -159,7 +159,7 @@
                         <label fallback="13205">$INFO[VideoPlayer.NextTitle]</label>
                         <shadowcolor></shadowcolor>
                     </control>
-				</control>
+                </control>
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>
@@ -192,7 +192,7 @@
                 <onup>Control.SetFocus(61)</onup>
                 <orientation>horizontal</orientation>
                 <itemlayout width="92" height="2-row">
-					<control type="image">
+                    <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -267,7 +267,7 @@
                         <description>Pause</description>
                         <label2></label2>
                         <thumb></thumb>
-						<onclick>action(back)</onclick>
+                        <onclick>action(back)</onclick>
                         <onclick>PlayerControl(play)</onclick>
                     </item>
                     <item>

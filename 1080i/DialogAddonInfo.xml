@@ -3,8 +3,8 @@
     <defaultcontrol always="true">8000</defaultcontrol>
     <controls>
         <include>globalBackground</include>
-		<!--mini window-->
-		<include>miniVideoPlayer</include>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
         <!--About this addon-->
         <control type="group">
             <posx>col-4-begin</posx>
@@ -167,9 +167,9 @@
                     </itemlayout>
                     <focusedlayout width="6-col" height="2-row">
                         <control type="image">
-							<animation type="focus">
-					            <effect type="fade" start="100" end="50" time="0"/>
-					        </animation>
+                            <animation type="focus">
+                                <effect type="fade" start="100" end="50" time="0"/>
+                            </animation>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>1-col</width>
@@ -213,7 +213,7 @@
                     </focusedlayout>
                     <content>
                         <item id="1">
-							<visible>Control.IsEnabled(13)</visible>
+                            <visible>Control.IsEnabled(13)</visible>
                             <label>31117</label>
                             <label2></label2>
                             <thumb></thumb>
@@ -226,14 +226,14 @@
                             <onclick>SendClick(146,6)</onclick>
                         </item>
                         <item id="3">
-							<visible>Control.IsEnabled(9)</visible>
+                            <visible>Control.IsEnabled(9)</visible>
                             <label>$INFO[Control.GetLabel(9)]</label>
                             <label2></label2>
                             <thumb></thumb>
                             <onclick>SendClick(146,9)</onclick>
                         </item>
                         <item id="4">
-							<visible>Control.IsEnabled(8)</visible>
+                            <visible>Control.IsEnabled(8)</visible>
                             <label>$INFO[Control.GetLabel(8)]</label>
                             <label2></label2>
                             <thumb></thumb>
@@ -293,7 +293,7 @@
             </control>
             <control type="button" id="14">
                 <description>Version</description>
-				<label>24069</label>
+                <label>24069</label>
             </control>
         </control>
         <!--debugging-->

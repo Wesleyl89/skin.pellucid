@@ -7,7 +7,7 @@
         <value>2160</value>
     </rule>
     <order direction="descending">dateadded</order>
-	<rule field="playcount" operator="is">
-		<value>0</value>
-	</rule>
+    <rule field="playcount" operator="is">
+        <value>0</value>
+    </rule>
 </smartplaylist>

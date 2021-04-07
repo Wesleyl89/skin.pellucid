@@ -4,8 +4,8 @@
     <controls>
         <!--background-->
         <include>globalBackground</include>
-		<!--mini window-->
-		<include>miniVideoPlayer</include>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
         <!--main menu-->
         <control type="group">
             <posx>col-4-begin</posx>
@@ -220,18 +220,18 @@
                     </item>
                 </content>
             </control>
-			<!--libreelec builds only-->
-			<control type="button" id="9001">
-				<visible>System.HasAddon(service.libreelec.settings)</visible>
-				<label>$LOCALIZE[31226]</label>
-				<posx>6-col</posx>
+            <!--libreelec builds only-->
+            <control type="button" id="9001">
+                <visible>System.HasAddon(service.libreelec.settings)</visible>
+                <label>$LOCALIZE[31226]</label>
+                <posx>6-col</posx>
                 <posy>15-row</posy>
                 <width>6-col</width>
-				<align>center</align>
-				<texturenofocus>colors/offblack.png</texturenofocus>
-				<onclick>RunAddon(service.libreelec.settings)</onclick>
-				<onup>9000</onup>
-			</control>
+                <align>center</align>
+                <texturenofocus>colors/offblack.png</texturenofocus>
+                <onclick>RunAddon(service.libreelec.settings)</onclick>
+                <onup>9000</onup>
+            </control>
         </control>
         <!--debugging-->
         <include>DebugGrid</include>
