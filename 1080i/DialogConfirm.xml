@@ -39,9 +39,9 @@
                 <font>textbox</font>
                 <textcolor>textActive</textcolor>
                 <autoscroll delay="3000" time="2000" repeat="5000"/>
-           </control>
-           <!--options-->
-           <control type="panel" id="9000">
+            </control>
+            <!--options-->
+            <control type="panel" id="9000">
                <posx>0</posx>
                <posy>228</posy>
                <width>8-col</width>
