@@ -88,11 +88,23 @@
 	                    </control>
 	                </focusedlayout>
 	                <content>
+						<item>
+							<visible>String.Contains(Container.FolderName, 4K)</visible>
+	                        <label>special://skin/extras/playlists/recentMovies4K.xsp</label>
+	                        <property name="textTitle">31176</property>
+	                    </item>
 	                    <item>
+							<visible>String.Contains(Container.FolderName, 4K)</visible>
+	                        <label>special://skin/extras/playlists/inprogressMovies4K.xsp</label>
+	                        <property name="textTitle">31127</property>
+	                    </item>
+	                    <item>
+							<visible>!String.Contains(Container.FolderName, 4K)</visible>
 	                        <label>special://skin/extras/playlists/recentMovies.xsp</label>
 	                        <property name="textTitle">31176</property>
 	                    </item>
 	                    <item>
+							<visible>!String.Contains(Container.FolderName, 4K)</visible>
 	                        <label>special://skin/extras/playlists/inprogressMovies.xsp</label>
 	                        <property name="textTitle">31127</property>
 	                    </item>

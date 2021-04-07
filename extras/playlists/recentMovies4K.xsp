@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <smartplaylist type="movies">
-    <name>recentMovies</name>
+    <name>recentMovies4K</name>
     <match>all</match>
     <limit>10</limit>
-    <rule field="filename" operator="doesnotcontain">
+    <rule field="filename" operator="contains">
         <value>2160</value>
     </rule>
     <order direction="descending">dateadded</order>
-	<rule field="playcount" operator="is">
-		<value>0</value>
-	</rule>
 </smartplaylist>
