@@ -250,7 +250,8 @@
 				<orientation>horizontal</orientation>
 				<visible>Player.SeekEnabled + !Player.ChannelPreviewActive</visible>
 			</control>
-            <control type="ranges">
+            <!-- Matrix only -->
+            <!-- <control type="ranges">
                 <posx>0</posx>
                 <posy>84</posy>
                 <width>20-col</width>
@@ -259,7 +260,7 @@
                 <lefttexture colordiffuse="55FFFFFF">colors/white.png</lefttexture>
                 <righttexture colordiffuse="55FFFFFF">colors/white.png</righttexture>
                 <info>Player.Chapters</info>
-            </control>
+            </control> -->
             <control type="label">
                 <posx>0</posx>
                 <posy>1-row</posy>
