@@ -46,6 +46,48 @@
                 <aspectratio>keep</aspectratio>
                 <fadetime>250</fadetime>
             </control>
+            <control type="grouplist">
+                <visible>control.hasfocus(9203) + !String.isEmpty(container(9203).ListItem.Rating(imdb))</visible>
+                <orientation>horizontal</orientation>
+                <posy>3-row</posy>
+                <posx>18-col</posx>
+                <align>left</align>
+                <control type="label">
+                    <font>symbolLarge</font>
+                    <height>3-row</height>
+                    <aligny>center</aligny>
+                    <textcolor>textActive</textcolor>
+                    <label></label>
+                </control>
+                <control type="label">
+                    <height>3-row</height>
+                    <font>mediumTitle</font>
+                    <aligny>center</aligny>
+                    <textcolor>textActive</textcolor>
+                    <label>     $INFO[container(9203).ListItem.Rating(imdb)]</label>
+                </control>
+            </control>
+            <control type="grouplist">
+                <visible>control.hasfocus(52) + !String.isEmpty(container(52).ListItem.Rating(imdb))</visible>
+                <orientation>horizontal</orientation>
+                <posy>3-row</posy>
+                <posx>18-col</posx>
+                <align>left</align>
+                <control type="label">
+                    <font>symbolLarge</font>
+                    <height>3-row</height>
+                    <aligny>center</aligny>
+                    <textcolor>textActive</textcolor>
+                    <label></label>
+                </control>
+                <control type="label">
+                    <height>3-row</height>
+                    <font>mediumTitle</font>
+                    <aligny>center</aligny>
+                    <textcolor>textActive</textcolor>
+                    <label>     $INFO[container(52).ListItem.Rating(imdb)]</label>
+                </control>
+            </control>
             <control type="group" id="9201">
                 <visible>$EXP[isTVShow] + !string.contains(container.folderpath,playlists) + !Skin.HasSetting(disableRecentTVShows)</visible>
                 <animation type="Conditional" condition="!controlgroup(9201).hasfocus">
